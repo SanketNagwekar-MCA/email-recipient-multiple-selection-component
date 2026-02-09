@@ -1,18 +1,47 @@
 {
-  "name": "email-recipient-multiple-selection-component",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@sanketnagwekar/email-lookahead",
+  "version": "1.1.1",
+  "description": "A React email recipient selection component with lookahead/autocomplete functionality",
   "type": "module",
+  "main": "./dist/email-lookahead.umd.js",
+  "module": "./dist/email-lookahead.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/email-lookahead.es.js",
+      "require": "./dist/email-lookahead.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:lib": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "antd": "^6.2.3",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+  "keywords": [
+    "react",
+    "email",
+    "recipient",
+    "lookahead",
+    "autocomplete",
+    "antd",
+    "component"
+  ],
+  "author": "Sanket",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanketNagwekar-MCA/email-recipient-multiple-selection-component"
+  },
+  "peerDependencies": {
+    "antd": ">=5.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -20,12 +49,16 @@
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "antd": "^6.2.3",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
   }
 }

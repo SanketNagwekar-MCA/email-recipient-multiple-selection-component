@@ -10,7 +10,7 @@ export interface Recipient {
   profilePicture?: string;
 }
 
-interface EmailRecipientSelectProps {
+export interface EmailRecipientSelectProps {
   placeholder?: string;
   recipients: Recipient[];
   value?: Recipient[];
