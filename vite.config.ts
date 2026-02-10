@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react(), cssInjectedByJsPlugin()],
   build: {
     cssCodeSplit: false,
+    emptyOutDir: false,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "EmailLookahead",

@@ -1,6 +1,6 @@
 {
   "name": "@sanketnagwekar/email-lookahead",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A React email recipient selection component with lookahead/autocomplete functionality",
   "type": "module",
   "main": "./dist/email-lookahead.umd.js",
@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:lib": "tsc && vite build",
+    "build:lib": "tsc --project tsconfig.app.json && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
